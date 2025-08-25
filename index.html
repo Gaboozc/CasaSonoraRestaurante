@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Sonora - Comida Típica Sonorense</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Casa Sonora Logo" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Bienvenidos a Casa Sonora</h1>
+            <p class="hero-subtitle">El Gran Yo Soy - Comida Típica Sonorense</p>
+            <p class="hero-description">Descubre los auténticos sabores de Sonora en cada bocado</p>
+            <a href="#menu" class="cta-button">Ver Menú</a>
+        </div>
+        <div class="hero-image">
+            <img src="hero-image.jpg" alt="Platos mexicanos tradicionales" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Nuestro Menú</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="todos">Todos</button>
+                <button class="category-btn" data-category="entradas">Entradas</button>
+                <button class="category-btn" data-category="platos">Platos Principales</button>
+                <button class="category-btn" data-category="postres">Postres</button>
+                <button class="category-btn" data-category="bebidas">Bebidas</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Nuestra Historia</h2>
+                    <p>En Casa Sonora, nos enorgullece servir la auténtica cocina sonorense, transmitida de generación en generación. Nuestros platos están preparados con ingredientes frescos y tradicionales, siguiendo las recetas originales de nuestra tierra.</p>
+                    <p>Desde 1995, hemos estado compartiendo los sabores únicos de Sonora con nuestra comunidad, creando experiencias culinarias que transportan a nuestros clientes directamente al corazón de México.</p>
+                </div>
+                <div class="about-image">
+                    <img src="about-image.jpg" alt="Cocina tradicional mexicana" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: #fff;">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <span class="contact-icon">📍</span>
+                    <h3>Ubicación</h3>
+                    <p class="highlight">123 Calle Principal</p>
+                    <p class="description">Ciudad, Sonora, México</p>
+                    <p class="description">En el corazón de la ciudad</p>
+                </div>
+                
+                <div class="contact-card">
+                    <span class="contact-icon">🕒</span>
+                    <h3>Horarios</h3>
+                    <p class="highlight">Lunes - Domingo</p>
+                    <p class="description">11:00 AM - 10:00 PM</p>
+                    <p class="description">Cocina abierta todo el día</p>
+                </div>
+                
+                <div class="contact-card">
+                    <span class="contact-icon">📞</span>
+                    <h3>Contacto</h3>
+                    <p class="highlight">+52 123 456 7890</p>
+                    <p class="description">pedidos</p>
+                    <div class="social-links-contact">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Casa Sonora. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
