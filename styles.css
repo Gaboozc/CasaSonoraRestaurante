@@ -189,75 +189,123 @@ body {
     background: #f8f9fa;
 }
 
-.menu-categories {
+.menu-special-days {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
 }
 
-.category-btn {
-    padding: 0.75rem 1.5rem;
-    border: 2px solid #2c5530;
-    background: transparent;
+.special-day-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #f4a261, #e9c46a);
     color: #2c5530;
+    padding: 0.75rem 1.5rem;
     border-radius: 25px;
-    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(244, 162, 97, 0.3);
     transition: all 0.3s ease;
-    font-weight: 500;
 }
 
-.category-btn.active,
-.category-btn:hover {
-    background: #2c5530;
-    color: #fff;
+.special-day-banner:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(244, 162, 97, 0.4);
 }
 
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+.day-indicator {
+    font-size: 1.5rem;
 }
 
-.menu-item {
+.day-text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+
+.menu-categories-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c5530;
+    text-align: center;
+    margin: 0;
+}
+
+/* Menu Simple */
+.menu-simple {
+    max-width: 800px;
+    margin: 0 auto;
     background: #fff;
     border-radius: 15px;
-    overflow: hidden;
+    padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
 }
 
-.menu-item:hover {
-    transform: translateY(-5px);
+.menu-section {
+    margin-bottom: 2.5rem;
 }
 
-.menu-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.menu-section:last-child {
+    margin-bottom: 0;
 }
 
-.menu-item-content {
-    padding: 1.5rem;
-}
-
-.menu-item h3 {
+.menu-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
     color: #2c5530;
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-}
-
-.menu-item p {
-    color: #666;
     margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f4a261;
+    text-align: center;
 }
 
-.menu-item-price {
+.menu-item-simple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.menu-item-simple:hover {
+    background-color: #f8f9fa;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-radius: 8px;
+}
+
+.menu-item-simple:last-child {
+    border-bottom: none;
+}
+
+.menu-item-name {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    flex: 1;
+}
+
+.menu-item-price-simple {
+    font-size: 1.1rem;
     color: #f4a261;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
+    text-align: right;
+    margin-left: 1rem;
+    white-space: nowrap;
 }
 
 /* About Section */
@@ -495,12 +543,18 @@ body {
         gap: 2rem;
     }
 
-    .menu-categories {
-        justify-content: center;
+    .menu-special-days {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
     }
-
-    .category-btn {
-        margin-bottom: 0.5rem;
+    
+    .special-day-banner {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .menu-categories-title {
+        font-size: 1.5rem;
     }
 
     .section-title {
@@ -521,8 +575,26 @@ body {
         padding: 1rem;
     }
 
-    .menu-grid {
-        grid-template-columns: 1fr;
+    .menu-simple {
+        margin: 0 1rem;
+        padding: 1.5rem;
+    }
+    
+    .menu-section-title {
+        font-size: 1.5rem;
+    }
+    
+    .menu-item-simple {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .menu-item-price-simple {
+        text-align: left;
+        margin-left: 0;
+        color: #f4a261;
+        font-weight: 700;
     }
 }
 
@@ -538,7 +610,6 @@ body {
     }
 }
 
-.menu-item,
 .about-content,
 .contact-content {
     animation: fadeInUp 0.6s ease-out;
