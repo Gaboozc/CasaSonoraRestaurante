@@ -53,9 +53,6 @@ body {
     margin: 0 auto;
 }
 
-.logo {
-    /* Sin padding, sin fondo, sin borde - solo el logo puro */
-}
 
 .logo-img {
     height: 200px;
@@ -618,4 +615,76 @@ body {
 /* Smooth scrolling for anchor links */
 html {
     scroll-padding-top: 220px;
+}
+:root {
+  /* Alto del hero: ajusta a tu layout; 16:9 aproximado con límites */
+  --hero-h: clamp(280px, 36vw, 520px);
+  /* Alto del navbar si es fixed (ajusta si aplica) */
+  --nav-h: 72px;
+}
+
+/* Si tu navbar es fixed-top, compensa el body para evitar overlap */
+body.has-fixed-nav {
+  padding-top: var(--nav-h);
+}
+
+/* 🟩 Marco visual del carrusel */
+.carousel-container {
+  width: 640px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+}
+
+/* 🧱 Carrusel ocupa todo el contenedor */
+.carousel-container .carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* 🧩 Slides con altura fija */
+.carousel-inner,
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+/* 🖼️ Imagen centrada y contenida */
+.carousel-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* 🎬 Transición suave entre slides */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 🚫 Evita transformaciones que causan saltos */
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active.carousel-item-start,
+.carousel-fade .carousel-item.active.carousel-item-end {
+  transform: none !important;
 }
