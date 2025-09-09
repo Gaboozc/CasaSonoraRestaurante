@@ -628,63 +628,115 @@ body.has-fixed-nav {
   padding-top: var(--nav-h);
 }
 
-/* 🟩 Marco visual del carrusel */
+/* 🟩 Marco visual del carrusel slideshow */
 .carousel-container {
-  width: 640px;
-  height: 500px;
+  width: 540px;
+  height: 400px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   border-radius: 16px;
-  background-color: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+  background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
 }
 
-/* 🧱 Carrusel ocupa todo el contenedor */
+/* Carrusel ocupa todo el contenedor */
 .carousel-container .carousel {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-/* 🧩 Slides con altura fija */
+/* Slides con altura fija */
 .carousel-inner,
 .carousel-item {
   width: 100%;
   height: 100%;
 }
 
-/* 🖼️ Imagen centrada y contenida */
+/* Imagen contenida y centrada */
 .carousel-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+
+/* 🟦 Carrusel tipo 2: fondo blanco sin interferencia */
+.carousel2-container {
+  width: 440px;
+  height: 400px;
+  margin: 3rem auto 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+/* Carrusel ocupa todo el contenedor */
+.carousel2-container .carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Slides con altura fija */
+.carousel2-container .carousel-inner,
+.carousel2-container .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+/* Imagen contenida y centrada */
+.carousel2-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
   transition: opacity 0.6s ease-in-out;
 }
+#menu {
+  position: relative;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
 
-/* 🎬 Transición suave entre slides */
-.carousel-fade .carousel-item {
+.floating-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-floating,
+.right-floating {
+  position: relative;
+  width: 160px;
+  height: 100%;
+}
+
+.floating-img {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+  animation: fadeInOut 6s ease-in-out forwards;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
 }
 
-.carousel-fade .carousel-item.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* 🚫 Evita transformaciones que causan saltos */
-.carousel-fade .carousel-item-next,
-.carousel-fade .carousel-item-prev,
-.carousel-fade .carousel-item.active.carousel-item-start,
-.carousel-fade .carousel-item.active.carousel-item-end {
-  transform: none !important;
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: scale(0.8); }
+  20% { opacity: 1; transform: scale(1); }
+  80% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.8); }
 }

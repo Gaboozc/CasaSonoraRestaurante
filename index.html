@@ -1,295 +1,488 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casa Sonora - Comida Típica Sonorense</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="logo">
-                    <img src="logo.png" alt="Casa Sonora Logo" class="logo-img">
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#menu">Menú</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="logo.png" alt="Casa Sonora Logo" class="logo-img" />
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Bienvenidos a Casa Sonora</h1>
-            <p class="hero-subtitle">El Gran Yo Soy - Comida Típica Sonorense</p>
-            <p class="hero-description">Descubre los auténticos sabores de Sonora en cada bocado</p>
-            <a href="#menu" class="cta-button">Ver Menú</a>
-        </div>
-        <div class="carousel">
-           <div class="carousel">
-  <div class="carousel-container">
-    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <div class="carousel-frame">
-            <img src="fotos/hero-image.jpg" style="width: auto; height: auto; object-fit: cover;" alt="Desierto Sonora" class="carousel-img" loading="lazy">
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <div class="carousel-frame">
-            <img src="fotos/birria.jpg" style="width: auto; height:auto; object-fit: cover;" alt="Birria" class="carousel-img" loading="lazy">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-frame">
-            <img src="fotos/puentes-gouglas.jpg" style="width: auto; height: auto; object-fit: cover;" alt="Paisaje" class="carousel-img" loading="lazy">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-frame">
-            <img src="fotos/plato-sonora5.jpg" style="width: auto; height: auto; object-fit: cover;" alt="Paisaje" class="carousel-img" loading="lazy">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-frame">
-            <img src="fotos/fauna2.jpg" style="width: auto; height: auto; object-fit: cover;" alt="Paisaje" class="carousel-img" loading="lazy">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-frame">
-            <img src="fotos/flora2.jpg" style="width: auto; height: auto; object-fit: cover;" alt="Paisaje" class="carousel-img" loading="lazy">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-frame">
-            <img src="fotos/plato-sonora7.jpg" style="width: auto; height: auto; object-fit: cover;" alt="Paisaje" class="carousel-img" loading="lazy">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-frame">
-            <img src="fotos/tren-sonora.jpg" style="width: auto; height: auto; object-fit: cover;" alt="Paisaje" class="carousel-img" loading="lazy">
+      <div class="hero-content">
+        <h1 class="hero-title">Bienvenidos a Casa Sonora</h1>
+        <p class="hero-subtitle">El Gran Yo Soy - Comida Típica Sonorense</p>
+        <p class="hero-description">
+          Descubre los auténticos sabores de Sonora en cada bocado
+        </p>
+        <a href="#menu" class="cta-button">Ver Menú</a>
+      </div>
+      <div class="carousel-container">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="2500"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="fotos/hero-image.jpg"
+                alt="Desierto Sonora"
+                class="carousel-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="fotos/birria.jpg"
+                alt="Birria"
+                class="carousel-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="fotos/puentes-gouglas.jpg"
+                alt="Puente Douglas"
+                class="carousel-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="fotos/plato-sonora5.jpg"
+                alt="Plato Sonorense"
+                class="carousel-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="fotos/fauna2.jpg"
+                alt="Fauna Sonora"
+                class="carousel-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="fotos/flora2.jpg"
+                alt="Flora Sonora"
+                class="carousel-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="fotos/plato-sonora7.jpg"
+                alt="Plato Sonorense 2"
+                class="carousel-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="fotos/tren-sonora.jpg"
+                alt="Tren Sonora"
+                class="carousel-img"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
+
+<section id="menu" class="menu">
+
+  <div class="floating-wrapper">
+    <div class="left-floating"></div>
+    <div class="right-floating"></div>
+  </div>
+  
+  <div class="container">
+    <h2 class="section-title">Nuestro Menú</h2>
+    <div class="menu-special-days">
+      <div class="special-day-banner">
+        <span class="day-indicator">🌮</span>
+        <span class="day-text">Viernes Pozolero</span>
+      </div>
+      <div class="special-day-banner">
+        <span class="day-indicator">🌽</span>
+        <span class="day-text">Sábado Tamalero</span>
+      </div>
+    </div>
+    <div class="menu-categories">
+      <h3 class="menu-categories-title">Especialidades de la Casa</h3>
+    </div>
+    <div class="menu-simple">
+      <div class="menu-section">
+        <h3 class="menu-section-title">BIRRIA</h3>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Plato de birria grande (250 grs.)</span>
+          <span class="menu-item-price-simple">$140.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Plato de birria chico (170 grs.)</span>
+          <span class="menu-item-price-simple">$115.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Quesabirria</span>
+          <span class="menu-item-price-simple">$60.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Birriamen</span>
+          <span class="menu-item-price-simple">$95.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Taco de birria (60 grs.)</span>
+          <span class="menu-item-price-simple">$35.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Juguito de birria 8 oz</span>
+          <span class="menu-item-price-simple">$15.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Juguito de birria ½ litro</span>
+          <span class="menu-item-price-simple">$30.00</span>
+        </div>
+      </div>
+      <div class="menu-section">
+        <h3 class="menu-section-title">Viernes Pozolero</h3>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Pozole Grande</span>
+          <span class="menu-item-price-simple">$110.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Pozole chico</span>
+          <span class="menu-item-price-simple">$95.00</span>
+        </div>
+      </div>
+      <div class="menu-section">
+        <h3 class="menu-section-title">Sábado Tamalero</h3>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Carne de puerco</span>
+          <span class="menu-item-price-simple">$35.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Camarón con Filadelfia</span>
+          <span class="menu-item-price-simple">$45.00</span>
+        </div>
+      </div>
+      <div class="menu-section">
+        <h3 class="menu-section-title">TACOS</h3>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Chicharrón guisado (taco güevon)</span>
+          <span class="menu-item-price-simple">$20.00 o 2 x $35.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Quesadillas de queso</span>
+          <span class="menu-item-price-simple">$20.00 o 2 x $35.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Chilorio</span>
+          <span class="menu-item-price-simple">$35.00</span>
+        </div>
+      </div>
+      <div class="menu-section">
+        <h3 class="menu-section-title">BEBIDAS</h3>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Refrescos</span>
+          <span class="menu-item-price-simple">$25.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Té varios sabores</span>
+          <span class="menu-item-price-simple">$15.00</span>
+        </div>
+      </div>
+      <div class="menu-section">
+        <h3 class="menu-section-title">CAFÉ</h3>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Nescafe</span>
+          <span class="menu-item-price-simple">$15.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Cappuccino</span>
+          <span class="menu-item-price-simple">$20.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Cappuccino Moka</span>
+          <span class="menu-item-price-simple">$20.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Cappuccino Vainilla</span>
+          <span class="menu-item-price-simple">$20.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Cappuccino Chocolate</span>
+          <span class="menu-item-price-simple">$20.00</span>
+        </div>
+        <div class="menu-item-simple">
+          <span class="menu-item-name">Cappuccino Irlandés</span>
+          <span class="menu-item-price-simple">$20.00</span>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-        </div>
-    </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu">
-        <div class="container">
-            <h2 class="section-title">Nuestro Menú</h2>
-            <div class="menu-special-days">
-                <div class="special-day-banner">
-                    <span class="day-indicator">🌮</span>
-                    <span class="day-text">Viernes Pozolero</span>
-                </div>
-                <div class="special-day-banner">
-                    <span class="day-indicator">🌽</span>
-                    <span class="day-text">Sábado Tamalero</span>
-                </div>
-            </div>
-            <div class="menu-categories">
-                <h3 class="menu-categories-title">Especialidades de la Casa</h3>
-            </div>
-            <div class="menu-simple">
-                <div class="menu-section">
-                    <h3 class="menu-section-title">BIRRIA</h3>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Plato de birria grande (250 grs.)</span>
-                        <span class="menu-item-price-simple">$140.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Plato de birria chico (170 grs.)</span>
-                        <span class="menu-item-price-simple">$115.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Quesabirria</span>
-                        <span class="menu-item-price-simple">$60.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Birriamen</span>
-                        <span class="menu-item-price-simple">$95.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Taco de birria (60 grs.)</span>
-                        <span class="menu-item-price-simple">$35.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Juguito de birria 8 oz</span>
-                        <span class="menu-item-price-simple">$15.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Juguito de birria ½ litro</span>
-                        <span class="menu-item-price-simple">$30.00</span>
-                    </div>
-                </div>
+  <script>
+  const leftZone = document.querySelector('.left-floating');
+  const rightZone = document.querySelector('.right-floating');
+  const imageSources = [
+    'fotos/birria.jpg',
+    'fotos/desebrada.jpg',
+    'fotos/desierto.jpg',
+    'fotos/habano.jpg',
+    'fotos/paisaje3.jpg',
+    'fotos/tacos.jpg',
+    'fotos/quesabirria.jpg',
+    'fotos/tamal.jpg',
+    'fotos/tortillas2.jpg',
+    'fotos/tortillas.jpg',
+    'fotos/plato-sonora11.jpg',
+    'fotos/plato-sonora12.jpg',
+    'fotos/plato-sonora3.jpg',
+    'fotos/plato-sonora4.jpg',
+    'fotos/plato-sonora5.jpg',
+    'fotos/plato-sonora9.jpg',
+    'fotos/plato-sonora7.jpg',
+    'fotos/plato-sonora.jpg',
+    'fotos/plato-sonora6.jpg',
+    'fotos/plato-sonora8.jpg',
+    'fotos/plato-sonora10.jpg',
+    'fotos/rosca.jpg',
+    'fotos/playa-cochorit.jpg',
+    'fotos/sopa.jpg',
+    'fotos/tacos.jpg',
+    'fotos/tacos2.jpg',
+    'fotos/frutos-rojos.jpg',
+    'fotos/flora.jpg',
+    'fotos/desebrada.jpg',
+    'fotos/carne-desebrada.jpg',
+    'fotos/birria.jpg',
+    'fotos/burrito.jpg',
+  ];
 
-                <div class="menu-section">
-                    <h3 class="menu-section-title">Viernes Pozolero</h3>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Pozole Grande</span>
-                        <span class="menu-item-price-simple">$110.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Pozole chico</span>
-                        <span class="menu-item-price-simple">$95.00</span>
-                    </div>
-                </div>
+  const slotHeight = 160; // altura mínima entre imágenes
+  const slotPadding = 20; // margen interno
+  const activeSlots = { left: new Set(), right: new Set() };
 
-                <div class="menu-section">
-                    <h3 class="menu-section-title">Sábado Tamalero</h3>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Carne de puerco</span>
-                        <span class="menu-item-price-simple">$35.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Camarón con Filadelfia</span>
-                        <span class="menu-item-price-simple">$45.00</span>
-                    </div>
-                </div>
+  function getAvailableSlot(zone, side) {
+    const zoneHeight = zone.offsetHeight;
+    const totalSlots = Math.floor(zoneHeight / slotHeight);
+    const used = activeSlots[side];
 
-                <div class="menu-section">
-                    <h3 class="menu-section-title">TACOS</h3>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Chicharrón guisado (taco güevon)</span>
-                        <span class="menu-item-price-simple">$20.00 o 2 x $35.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Quesadillas de queso</span>
-                        <span class="menu-item-price-simple">$20.00 o 2 x $35.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Chilorio</span>
-                        <span class="menu-item-price-simple">$35.00</span>
-                    </div>
-                </div>
+    const available = [];
+    for (let i = 0; i < totalSlots; i++) {
+      if (!used.has(i)) available.push(i);
+    }
 
-                <div class="menu-section">
-                    <h3 class="menu-section-title">BEBIDAS</h3>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Refrescos</span>
-                        <span class="menu-item-price-simple">$25.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Té varios sabores</span>
-                        <span class="menu-item-price-simple">$15.00</span>
-                    </div>
-                </div>
+    if (available.length === 0) return null;
+    const slot = available[Math.floor(Math.random() * available.length)];
+    used.add(slot);
+    return slot;
+  }
 
-                <div class="menu-section">
-                    <h3 class="menu-section-title">CAFÉ</h3>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Nescafe</span>
-                        <span class="menu-item-price-simple">$15.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Cappuccino</span>
-                        <span class="menu-item-price-simple">$20.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Cappuccino Moka</span>
-                        <span class="menu-item-price-simple">$20.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Cappuccino Vainilla</span>
-                        <span class="menu-item-price-simple">$20.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Cappuccino Chocolate</span>
-                        <span class="menu-item-price-simple">$20.00</span>
-                    </div>
-                    <div class="menu-item-simple">
-                        <span class="menu-item-name">Cappuccino Irlandés</span>
-                        <span class="menu-item-price-simple">$20.00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  function createFloatingImage(zone, side) {
+    const slot = getAvailableSlot(zone, side);
+    if (slot === null) return;
 
-    <!-- About Section -->
+    const img = document.createElement('img');
+    img.src = imageSources[Math.floor(Math.random() * imageSources.length)];
+    img.className = 'floating-img';
+
+    const y = slot * slotHeight + slotPadding;
+    const x = side === 'left'
+      ? slotPadding + Math.random() * 20
+      : zone.offsetWidth - 160 - slotPadding - Math.random() * 20;
+
+    img.style.top = `${y}px`;
+    img.style.left = `${x}px`;
+
+    zone.appendChild(img);
+
+    setTimeout(() => {
+      img.remove();
+      activeSlots[side].delete(slot);
+    }, 6000);
+  }
+
+  setInterval(() => createFloatingImage(leftZone, 'left'), 1000);
+  setInterval(() => createFloatingImage(rightZone, 'right'), 1000);
+</script>
+
+  <style>
+    #menu {
+      position: relative;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+
+    .floating-zone {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    .floating-img {
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 12px;
+      opacity: 0;
+      animation: fadeInOut 6s ease-in-out forwards;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: scale(0.8); }
+      20% { opacity: 1; transform: scale(1); }
+      80% { opacity: 1; transform: scale(1); }
+      100% { opacity: 0; transform: scale(0.8); }
+    }
+  </style>
+</section>
+
     <section id="nosotros" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">Nuestra Historia</h2>
-                    <p>En Casa Sonora, nos enorgullece servir la auténtica cocina sonorense, transmitida de generación en generación. Nuestros platos están preparados con ingredientes frescos y tradicionales, siguiendo las recetas originales de nuestra tierra.</p>
-                    <p>Desde 1995, hemos estado compartiendo los sabores únicos de Sonora con nuestra comunidad, creando experiencias culinarias que transportan a nuestros clientes directamente al corazón de México.</p>
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <p>
+              En Casa Sonora, nos enorgullece servir la auténtica cocina
+              sonorense, transmitida de generación en generación. Nuestros
+              platos están preparados con ingredientes frescos y tradicionales,
+              siguiendo las recetas originales de nuestra tierra.
+            </p>
+            <p>
+              Desde 1995, hemos estado compartiendo los sabores únicos de Sonora
+              con nuestra comunidad, creando experiencias culinarias que
+              transportan a nuestros clientes directamente al corazón de México.
+            </p>
+          </div>
+          <div class="carousel2-container">
+            <div
+              id="carousel2"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              data-bs-interval="2500"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="fotos/frutos-rojos.jpg"
+                    alt="Desierto Sonora"
+                    class="carousel2-img"
+                    loading="lazy"
+                  />
                 </div>
-                <div class="about-image">
-                    <img src="about-image.jpg" alt="Cocina tradicional mexicana" class="about-img">
+                <div class="carousel-item">
+                  <img
+                    src="fotos/paisaje15.jpg"
+                    alt="Birria"
+                    class="carousel2-img"
+                    loading="lazy"
+                  />
                 </div>
+                <div class="carousel-item">
+                  <img
+                    src="fotos/plato-sonora4.jpg"
+                    alt="Plato Sonorense"
+                    class="carousel2-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="fotos/plato-sonora9.jpg"
+                    alt="Tren Sonora"
+                    class="carousel2-img"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contacto" class="contact">
-        <div class="container">
-            <h2 class="section-title" style="color: #fff;">Contáctanos</h2>
-            <div class="contact-content">
-                <div class="contact-card">
-                    <span class="contact-icon">📍</span>
-                    <h3>Ubicación</h3>
-                    <p class="highlight">calle clematides</p>
-                    <p class="description">coacalco, Edo Mexico</p>
-                    <p class="description">en frente del multiplaza coacalco</p>
-                </div>
-                
-                <div class="contact-card">
-                    <span class="contact-icon">🕒</span>
-                    <h3>Horarios</h3>
-                    <p class="highlight">Lunes - Domingo</p>
-                    <p class="description">11:00 AM - 10:00 PM</p>
-                    <p class="description">Cocina abierta todo el día</p>
-                </div>
-                
-                <div class="contact-card">
-                    <span class="contact-icon">📞</span>
-                    <h3>Contacto</h3>
-                    <p class="highlight">+52 56 3756 4800</p>
-                    <p class="description">pedidos</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title" style="color: #fff">Contáctanos</h2>
+        <div class="contact-content">
+          <div class="contact-card">
+            <span class="contact-icon">📍</span>
+            <h3>Ubicación</h3>
+            <p class="highlight">Calle Clematides</p>
+            <p class="description">Coacalco, Edo Mexico</p>
+            <p class="description">en frente del multiplaza Coacalco</p>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">🕒</span>
+            <h3>Horarios</h3>
+            <p class="highlight">Lunes - Domingo</p>
+            <p class="description">11:00 AM - 10:00 PM</p>
+            <p class="description">Cocina abierta todo el día</p>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">📞</span>
+            <h3>Contacto</h3>
+            <p class="highlight">+52 56 3756 4800</p>
+            <p class="description">pedidos</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-            <div class="footer-bottom">
-                <p>&copy; 2024 Casa Sonora. Todos los derechos reservados.</p>
-            </div>
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Casa Sonora. Todos los derechos reservados.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
