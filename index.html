@@ -29,7 +29,7 @@
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
-          <div class="hamburger">
+          <div class="hamburger" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
@@ -125,261 +125,137 @@
       </div>
     </section>
 
-
-<section id="menu" class="menu">
-
-  <div class="floating-wrapper">
-    <div class="left-floating"></div>
-    <div class="right-floating"></div>
-  </div>
-  
-  <div class="container">
-    <h2 class="section-title">Nuestro Menú</h2>
-    <div class="menu-special-days">
-      <div class="special-day-banner">
-        <span class="day-indicator">🌮</span>
-        <span class="day-text">Viernes Pozolero</span>
+    <section id="menu" class="menu">
+      <div class="floating-wrapper">
+        <div class="left-floating"></div>
+        <div class="right-floating"></div>
       </div>
-      <div class="special-day-banner">
-        <span class="day-indicator">🌽</span>
-        <span class="day-text">Sábado Tamalero</span>
+      
+      <div class="container">
+        <h2 class="section-title">Nuestro Menú</h2>
+        <div class="menu-special-days">
+          <div class="special-day-banner">
+            <span class="day-indicator">🌮</span>
+            <span class="day-text">Viernes Pozolero</span>
+          </div>
+          <div class="special-day-banner">
+            <span class="day-indicator">🌽</span>
+            <span class="day-text">Sábado Tamalero</span>
+          </div>
+        </div>
+        <div class="menu-categories">
+          <h3 class="menu-categories-title">Especialidades de la Casa</h3>
+        </div>
+        <div class="menu-simple">
+          <div class="menu-section">
+            <h3 class="menu-section-title">BIRRIA</h3>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Plato de birria grande (250 grs.)</span>
+              <span class="menu-item-price-simple">$140.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Plato de birria chico (170 grs.)</span>
+              <span class="menu-item-price-simple">$115.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Quesabirria</span>
+              <span class="menu-item-price-simple">$60.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Birriamen</span>
+              <span class="menu-item-price-simple">$95.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Taco de birria (60 grs.)</span>
+              <span class="menu-item-price-simple">$35.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Juguito de birria 8 oz</span>
+              <span class="menu-item-price-simple">$15.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Juguito de birria ½ litro</span>
+              <span class="menu-item-price-simple">$30.00</span>
+            </div>
+          </div>
+          <div class="menu-section">
+            <h3 class="menu-section-title">Viernes Pozolero</h3>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Pozole Grande</span>
+              <span class="menu-item-price-simple">$110.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Pozole chico</span>
+              <span class="menu-item-price-simple">$95.00</span>
+            </div>
+          </div>
+          <div class="menu-section">
+            <h3 class="menu-section-title">Sábado Tamalero</h3>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Carne de puerco</span>
+              <span class="menu-item-price-simple">$35.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Camarón con Filadelfia</span>
+              <span class="menu-item-price-simple">$45.00</span>
+            </div>
+          </div>
+          <div class="menu-section">
+            <h3 class="menu-section-title">TACOS</h3>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Chicharrón guisado (taco güevon)</span>
+              <span class="menu-item-price-simple">$20.00 o 2 x $35.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Quesadillas de queso</span>
+              <span class="menu-item-price-simple">$20.00 o 2 x $35.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Chilorio</span>
+              <span class="menu-item-price-simple">$35.00</span>
+            </div>
+          </div>
+          <div class="menu-section">
+            <h3 class="menu-section-title">BEBIDAS</h3>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Refrescos</span>
+              <span class="menu-item-price-simple">$25.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Té varios sabores</span>
+              <span class="menu-item-price-simple">$15.00</span>
+            </div>
+          </div>
+          <div class="menu-section">
+            <h3 class="menu-section-title">CAFÉ</h3>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Nescafe</span>
+              <span class="menu-item-price-simple">$15.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Cappuccino</span>
+              <span class="menu-item-price-simple">$20.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Cappuccino Moka</span>
+              <span class="menu-item-price-simple">$20.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Cappuccino Vainilla</span>
+              <span class="menu-item-price-simple">$20.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Cappuccino Chocolate</span>
+              <span class="menu-item-price-simple">$20.00</span>
+            </div>
+            <div class="menu-item-simple">
+              <span class="menu-item-name">Cappuccino Irlandés</span>
+              <span class="menu-item-price-simple">$20.00</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="menu-categories">
-      <h3 class="menu-categories-title">Especialidades de la Casa</h3>
-    </div>
-    <div class="menu-simple">
-      <div class="menu-section">
-        <h3 class="menu-section-title">BIRRIA</h3>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Plato de birria grande (250 grs.)</span>
-          <span class="menu-item-price-simple">$140.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Plato de birria chico (170 grs.)</span>
-          <span class="menu-item-price-simple">$115.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Quesabirria</span>
-          <span class="menu-item-price-simple">$60.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Birriamen</span>
-          <span class="menu-item-price-simple">$95.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Taco de birria (60 grs.)</span>
-          <span class="menu-item-price-simple">$35.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Juguito de birria 8 oz</span>
-          <span class="menu-item-price-simple">$15.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Juguito de birria ½ litro</span>
-          <span class="menu-item-price-simple">$30.00</span>
-        </div>
-      </div>
-      <div class="menu-section">
-        <h3 class="menu-section-title">Viernes Pozolero</h3>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Pozole Grande</span>
-          <span class="menu-item-price-simple">$110.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Pozole chico</span>
-          <span class="menu-item-price-simple">$95.00</span>
-        </div>
-      </div>
-      <div class="menu-section">
-        <h3 class="menu-section-title">Sábado Tamalero</h3>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Carne de puerco</span>
-          <span class="menu-item-price-simple">$35.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Camarón con Filadelfia</span>
-          <span class="menu-item-price-simple">$45.00</span>
-        </div>
-      </div>
-      <div class="menu-section">
-        <h3 class="menu-section-title">TACOS</h3>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Chicharrón guisado (taco güevon)</span>
-          <span class="menu-item-price-simple">$20.00 o 2 x $35.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Quesadillas de queso</span>
-          <span class="menu-item-price-simple">$20.00 o 2 x $35.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Chilorio</span>
-          <span class="menu-item-price-simple">$35.00</span>
-        </div>
-      </div>
-      <div class="menu-section">
-        <h3 class="menu-section-title">BEBIDAS</h3>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Refrescos</span>
-          <span class="menu-item-price-simple">$25.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Té varios sabores</span>
-          <span class="menu-item-price-simple">$15.00</span>
-        </div>
-      </div>
-      <div class="menu-section">
-        <h3 class="menu-section-title">CAFÉ</h3>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Nescafe</span>
-          <span class="menu-item-price-simple">$15.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Cappuccino</span>
-          <span class="menu-item-price-simple">$20.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Cappuccino Moka</span>
-          <span class="menu-item-price-simple">$20.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Cappuccino Vainilla</span>
-          <span class="menu-item-price-simple">$20.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Cappuccino Chocolate</span>
-          <span class="menu-item-price-simple">$20.00</span>
-        </div>
-        <div class="menu-item-simple">
-          <span class="menu-item-name">Cappuccino Irlandés</span>
-          <span class="menu-item-price-simple">$20.00</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-  const leftZone = document.querySelector('.left-floating');
-  const rightZone = document.querySelector('.right-floating');
-  const imageSources = [
-    'fotos/birria.jpg',
-    'fotos/desebrada.jpg',
-    'fotos/desierto.jpg',
-    'fotos/habano.jpg',
-    'fotos/paisaje3.jpg',
-    'fotos/tacos.jpg',
-    'fotos/quesabirria.jpg',
-    'fotos/tamal.jpg',
-    'fotos/tortillas2.jpg',
-    'fotos/tortillas.jpg',
-    'fotos/plato-sonora11.jpg',
-    'fotos/plato-sonora12.jpg',
-    'fotos/plato-sonora3.jpg',
-    'fotos/plato-sonora4.jpg',
-    'fotos/plato-sonora5.jpg',
-    'fotos/plato-sonora9.jpg',
-    'fotos/plato-sonora7.jpg',
-    'fotos/plato-sonora.jpg',
-    'fotos/plato-sonora6.jpg',
-    'fotos/plato-sonora8.jpg',
-    'fotos/plato-sonora10.jpg',
-    'fotos/rosca.jpg',
-    'fotos/playa-cochorit.jpg',
-    'fotos/sopa.jpg',
-    'fotos/tacos.jpg',
-    'fotos/tacos2.jpg',
-    'fotos/frutos-rojos.jpg',
-    'fotos/flora.jpg',
-    'fotos/desebrada.jpg',
-    'fotos/carne-desebrada.jpg',
-    'fotos/birria.jpg',
-    'fotos/burrito.jpg',
-  ];
-
-  const slotHeight = 160; // altura mínima entre imágenes
-  const slotPadding = 20; // margen interno
-  const activeSlots = { left: new Set(), right: new Set() };
-
-  function getAvailableSlot(zone, side) {
-    const zoneHeight = zone.offsetHeight;
-    const totalSlots = Math.floor(zoneHeight / slotHeight);
-    const used = activeSlots[side];
-
-    const available = [];
-    for (let i = 0; i < totalSlots; i++) {
-      if (!used.has(i)) available.push(i);
-    }
-
-    if (available.length === 0) return null;
-    const slot = available[Math.floor(Math.random() * available.length)];
-    used.add(slot);
-    return slot;
-  }
-
-  function createFloatingImage(zone, side) {
-    const slot = getAvailableSlot(zone, side);
-    if (slot === null) return;
-
-    const img = document.createElement('img');
-    img.src = imageSources[Math.floor(Math.random() * imageSources.length)];
-    img.className = 'floating-img';
-
-    const y = slot * slotHeight + slotPadding;
-    const x = side === 'left'
-      ? slotPadding + Math.random() * 20
-      : zone.offsetWidth - 160 - slotPadding - Math.random() * 20;
-
-    img.style.top = `${y}px`;
-    img.style.left = `${x}px`;
-
-    zone.appendChild(img);
-
-    setTimeout(() => {
-      img.remove();
-      activeSlots[side].delete(slot);
-    }, 6000);
-  }
-
-  setInterval(() => createFloatingImage(leftZone, 'left'), 1000);
-  setInterval(() => createFloatingImage(rightZone, 'right'), 1000);
-</script>
-
-  <style>
-    #menu {
-      position: relative;
-      background-color: #f0f0f0;
-      overflow: hidden;
-    }
-
-    .floating-zone {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      pointer-events: none;
-      z-index: 5;
-    }
-
-    .floating-img {
-      position: absolute;
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 12px;
-      opacity: 0;
-      animation: fadeInOut 6s ease-in-out forwards;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-    }
-
-    @keyframes fadeInOut {
-      0% { opacity: 0; transform: scale(0.8); }
-      20% { opacity: 1; transform: scale(1); }
-      80% { opacity: 1; transform: scale(1); }
-      100% { opacity: 0; transform: scale(0.8); }
-    }
-  </style>
-</section>
+    </section>
 
     <section id="nosotros" class="about">
       <div class="container">
@@ -484,5 +360,133 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      const leftZone = document.querySelector('.left-floating');
+      const rightZone = document.querySelector('.right-floating');
+      const imageSources = [
+        'fotos/birria.jpg',
+        'fotos/desebrada.jpg',
+        'fotos/desierto.jpg',
+        'fotos/habano.jpg',
+        'fotos/paisaje3.jpg',
+        'fotos/tacos.jpg',
+        'fotos/quesabirria.jpg',
+        'fotos/tamal.jpg',
+        'fotos/tortillas2.jpg',
+        'fotos/tortillas.jpg',
+        'fotos/plato-sonora11.jpg',
+        'fotos/plato-sonora12.jpg',
+        'fotos/plato-sonora3.jpg',
+        'fotos/plato-sonora4.jpg',
+        'fotos/plato-sonora5.jpg',
+        'fotos/plato-sonora9.jpg',
+        'fotos/plato-sonora7.jpg',
+        'fotos/plato-sonora.jpg',
+        'fotos/plato-sonora6.jpg',
+        'fotos/plato-sonora8.jpg',
+        'fotos/plato-sonora10.jpg',
+        'fotos/rosca.jpg',
+        'fotos/playa-cochorit.jpg',
+        'fotos/sopa.jpg',
+        'fotos/tacos.jpg',
+        'fotos/tacos2.jpg',
+        'fotos/frutos-rojos.jpg',
+        'fotos/flora.jpg',
+        'fotos/desebrada.jpg',
+        'fotos/carne-desebrada.jpg',
+        'fotos/birria.jpg',
+        'fotos/burrito.jpg',
+      ];
+
+      const slotHeight = 160;
+      const slotPadding = 20;
+      const activeSlots = { left: new Set(), right: new Set() };
+
+      function getAvailableSlot(zone, side) {
+        const zoneHeight = zone.offsetHeight;
+        const totalSlots = Math.floor(zoneHeight / slotHeight);
+        const used = activeSlots[side];
+
+        const available = [];
+        for (let i = 0; i < totalSlots; i++) {
+          if (!used.has(i)) available.push(i);
+        }
+
+        if (available.length === 0) return null;
+        const slot = available[Math.floor(Math.random() * available.length)];
+        used.add(slot);
+        return slot;
+      }
+
+      function createFloatingImage(zone, side) {
+        // Solo crear imágenes flotantes en pantallas grandes
+        if (window.innerWidth <= 1024) return;
+        
+        const slot = getAvailableSlot(zone, side);
+        if (slot === null) return;
+
+        const img = document.createElement('img');
+        img.src = imageSources[Math.floor(Math.random() * imageSources.length)];
+        img.className = 'floating-img';
+
+        const y = slot * slotHeight + slotPadding;
+        const x = side === 'left'
+          ? slotPadding + Math.random() * 20
+          : zone.offsetWidth - 160 - slotPadding - Math.random() * 20;
+
+        img.style.top = `${y}px`;
+        img.style.left = `${x}px`;
+
+        zone.appendChild(img);
+
+        setTimeout(() => {
+          img.remove();
+          activeSlots[side].delete(slot);
+        }, 6000);
+      }
+
+      // Solo iniciar las imágenes flotantes en pantallas grandes
+      function initFloatingImages() {
+        if (window.innerWidth > 1024) {
+          setInterval(() => createFloatingImage(leftZone, 'left'), 1000);
+          setInterval(() => createFloatingImage(rightZone, 'right'), 1000);
+        }
+      }
+
+      // Función para toggle del menú móvil
+      function toggleMenu() {
+        const navMenu = document.querySelector('.nav-menu');
+        const hamburger = document.querySelector('.hamburger');
+        
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      }
+
+      // Cerrar menú al hacer click en un enlace
+      document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          const navMenu = document.querySelector('.nav-menu');
+          const hamburger = document.querySelector('.hamburger');
+          
+          navMenu.classList.remove('active');
+          hamburger.classList.remove('active');
+        });
+      });
+
+      // Inicializar cuando la página cargue
+      document.addEventListener('DOMContentLoaded', initFloatingImages);
+      
+      // Reinicializar en resize
+      window.addEventListener('resize', () => {
+        // Limpiar intervalos existentes si es necesario
+        if (window.innerWidth <= 1024) {
+          // Remover todas las imágenes flotantes existentes
+          document.querySelectorAll('.floating-img').forEach(img => img.remove());
+          // Limpiar slots activos
+          activeSlots.left.clear();
+          activeSlots.right.clear();
+        }
+      });
+    </script>
   </body>
 </html>

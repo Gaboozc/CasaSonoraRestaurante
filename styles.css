@@ -740,3 +740,22 @@ body.has-fixed-nav {
   80% { opacity: 1; transform: scale(1); }
   100% { opacity: 0; transform: scale(0.8); }
 }
+@media (max-width: 1024px) {
+  .header,
+  .nav,
+  .nav-container,
+  .nav-menu,
+  .hamburger {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Si estabas usando scroll-padding-top para compensar el header, lo reseteamos en pantallas pequeñas */
+  html {
+    scroll-padding-top: 0;
+  }
+  body.has-fixed-nav {
+    padding-top: 0;
+  }
+}
