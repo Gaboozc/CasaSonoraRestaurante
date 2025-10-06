@@ -1748,6 +1748,96 @@ p {
   }
 }
 
+/* Media Query específica para iPad Air (820px) e iPad Pro (1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Evitar overflow horizontal y raya blanca lateral */
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+    justify-content: center;
+    gap: 1.5rem;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  /* Mostrar logo móvil en tablets también */
+  .mobile-logo {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 1rem;
+    order: 0;
+  }
+
+  .mobile-logo-img {
+    height: 500px !important;
+    width: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+    border: 5px solid #d4a574;
+  }
+  
+  /* Ordenar elementos: logo -> contenido -> carousel */
+  .hero-content {
+    padding: 1rem;
+    max-width: 80%;
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  .carousel-container {
+    order: 2;
+    flex-shrink: 0;
+    max-width: 90%;
+  }
+  
+  /* Ajustar tamaños de fuente para tablets */
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Ocultar navbar en tablets (como en móviles) */
+  .header,
+  .nav,
+  .nav-container,
+  .nav-menu,
+  .hamburger {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+  
+  /* Reset scroll padding */
+  html {
+    scroll-padding-top: 0;
+  }
+  
+  body.has-fixed-nav {
+    padding-top: 0;
+  }
+}
+
 /* Media Query para pantallas grandes - optimizaciones adicionales */
 @media (min-width: 1025px) {
   .nav-container {
@@ -2184,7 +2274,7 @@ body.has-fixed-nav {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .header,
   .nav,
   .nav-container,
@@ -2485,31 +2575,11 @@ body.has-fixed-nav {
   box-shadow: 0 8px 25px rgba(212, 165, 116, 0.6);
 }
 
-/* REGLA ESPECIAL PARA LOGO EN MÓVILES - MÁXIMA PRIORIDAD */
-@media screen and (max-width: 768px) {
+/* REGLA ESPECIAL PARA LOGO EN MÓVILES Y TABLETS - MÁXIMA PRIORIDAD */
+@media screen and (max-width: 1024px) {
   /* Mantener navbar funcional pero sin logo duplicado */
   .header .nav .nav-container .logo {
     display: none !important;
-  }
-
-  /* Mostrar logo móvil en el hero */
-  .mobile-logo {
-    display: block !important;
-    text-align: center;
-    margin-bottom: 1rem;
-    order: 0;
-  }
-
-  .mobile-logo-img {
-    height: 300px !important;
-    width: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 15px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-    border: 4px solid #d4a574;
   }
 
   /* Asegurar que el hamburger menu funcione */
@@ -2521,7 +2591,29 @@ body.has-fixed-nav {
     right: 20px;
   }
 }
-@media screen and (min-width: 769px) {
+
+@media screen and (max-width: 768px) {
+  /* Mostrar logo móvil en el hero para móviles */
+  .mobile-logo {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 1rem;
+    order: 0;
+  }
+
+  .mobile-logo-img {
+    height: 450px !important;
+    width: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.7);
+    border: 5px solid #d4a574;
+  }
+}
+@media screen and (min-width: 1025px) {
   /* Ocultar logo móvil en desktop */
   .mobile-logo {
     display: none !important;
