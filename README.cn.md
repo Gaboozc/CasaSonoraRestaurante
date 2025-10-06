@@ -1,10 +1,10 @@
 # HTML Hello
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/html-hello.git)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/AlphaDev/casa-sonora-website.git)
 
-为使用 [gitpod.io](gitpod.io) 代码编辑器 4Geeks Academy 学生提供的最基础的样板。
+为 Casa Sonora Restaurant 网站开发的基础模板，由 AlphaDev 创建。
 
-[![How to open html/css preview of my project in gitpod](https://github.com/4GeeksAcademy/Templates-Boilerplates/blob/master/assets/hello-html-intro.png?raw=true)](https://youtu.be/dfbDCMu_p-0)
+[![Casa Sonora Restaurant Preview](https://github.com/AlphaDev/casa-sonora-website/blob/master/assets/casa-sonora-preview.png?raw=true)](https://youtu.be/dfbDCMu_p-0)
 
 ## 接下来怎么做？
 
@@ -20,7 +20,7 @@ $ pip3 install flask && python3 server.py
 ```html
 <head>
   ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
   ...
 </head>
 ```

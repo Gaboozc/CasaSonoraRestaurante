@@ -23,7 +23,7 @@ def serve_dir_directory_index():
     if os.path.exists("index.html"):
         return send_from_directory(static_file_dir, 'index.html')
     else:
-        return "<h1 align='center'>404</h1><h2 align='center'>Missing index.html file</h2><p align='center'><img src='https://github.com/4GeeksAcademy/html-hello/blob/main/.vscode/rigo-baby.jpeg?raw=true' /></p>"
+        return "<h1 align='center'>404</h1><h2 align='center'>Missing index.html file</h2><p align='center'><img src='https://github.com/AlphaDev/casa-sonora-website/blob/main/.vscode/logo.png?raw=true' /></p>"
 
 # Serving any other image
 @app.route('/<path:path>', methods=['GET'])
