@@ -14,21 +14,22 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 // Navbar background on scroll
 window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".navbar");
-  if (window.scrollY > 50) {
+  const navbar = document.querySelector(".header");
+  if (navbar && window.scrollY > 50) {
     navbar.classList.add("scrolled");
-  } else {
+  } else if (navbar) {
     navbar.classList.remove("scrolled");
   }
 });
 
 // Mobile menu toggle
-const navbarToggler = document.querySelector(".navbar-toggler");
-const navbarCollapse = document.querySelector(".navbar-collapse");
+const navbarToggler = document.querySelector(".hamburger");
+const navbarCollapse = document.querySelector(".nav-menu");
 
-if (navbarToggler) {
+if (navbarToggler && navbarCollapse) {
   navbarToggler.addEventListener("click", function () {
-    navbarCollapse.classList.toggle("show");
+    navbarCollapse.classList.toggle("active");
+    navbarToggler.classList.toggle("active");
   });
 }
 

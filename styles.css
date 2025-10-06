@@ -98,6 +98,13 @@ p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.header.scrolled {
+  background: rgba(44, 85, 48, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
